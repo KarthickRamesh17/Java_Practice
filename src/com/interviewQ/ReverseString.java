@@ -2,17 +2,17 @@ package com.interviewQ;
 
 public class ReverseString {
     static String reveseString(String input){
-        char[] chars = input.toCharArray();
-        int left = 0, right = input.length() - 1 ;
+        char[] charArr = input.toCharArray();
+        int left = 0 , right = input.length() - 1;
         while(left<right)
         {
-            char temp  = chars[left];
-            chars[left] = chars[right];
-            chars[right] = temp;
+            char temp = charArr[left];
+            charArr[left] = charArr[right];
+            charArr[right] = temp;
             left++;
             right--;
         }
-        return new String(chars);
+        return new String(charArr);
     }
     public static void main(String[] args)
     {

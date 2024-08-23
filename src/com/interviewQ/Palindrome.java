@@ -3,7 +3,7 @@ package com.interviewQ;
 public class Palindrome {
 
     public static boolean palindrome(String input){
-        char[] inputArr = input.toCharArray();
+       // char[] inputArr = input.toCharArray();
         int left = 0 , right = input.length() - 1;
         while(left<right){
             if(input.charAt(left)!= input.charAt(right))
